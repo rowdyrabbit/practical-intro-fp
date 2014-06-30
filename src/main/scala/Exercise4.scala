@@ -19,6 +19,12 @@ object Exercise4 {
     fnList.foldLeft(data) {(bandList, currFn) => bandList.map(currFn)}
   }
 
+  def pipeline_each_with_compose(data: List[Band], fnList: List[Band => Band]): List[Band] = {
+
+    for (b <- data) yield fnList(0)(b)
+//    data.foldLeft(List[Band]()){(bandList, currBand) => }
+  }
+
 
 
 }

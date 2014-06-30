@@ -11,6 +11,9 @@ Exercise4.pipeline_each(List(new Exercise4.Band("sunset rubdown", "UK", false), 
                         List(Exercise4.set_canada_as_country, Exercise4.strip_punctuation_from_name, Exercise4.capitalize_names))
 
 
+Exercise4.pipeline_each_with_compose(List(new Exercise4.Band("sunset rubdown", "UK", false), new Exercise4.Band("a silver mt. zion", "Spain", true)),
+  List(Exercise4.set_canada_as_country, Exercise4.strip_punctuation_from_name, Exercise4.capitalize_names))
+
 
 Exercise4v2.pipeline_each(Exercise4v2.bands,
   List(Exercise4v2.set_canada_as_country,
